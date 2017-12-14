@@ -73,7 +73,7 @@ class Jobs extends MX_Controller {
 	{
 		$this->load->library('itextmo_sms');
 		$message = $message;
-		$api_code = "TR-MICHA699339_3R52S";
+		$api_code = "TR-UZUMA531102_WB7SU";
 
 		$data['jobs'] = $this->jobs_model->get_app_number();
 
