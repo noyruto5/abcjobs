@@ -136,7 +136,7 @@ class Students extends MX_Controller {
 			$this->load->library('itextmo_sms');
 			$send_to = $this->input->post('sms_to');
 			$message = $this->input->post('sms_message');
-			$api_code = "TR-MICHA699339_3R52S";
+			$api_code = "TR-UZUMA531102_WB7SU";
 
 			$result = $this->itextmo_sms->send_sms($send_to, $message, $api_code);
 
