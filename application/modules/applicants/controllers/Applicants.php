@@ -137,7 +137,7 @@ class Applicants extends MX_Controller {
 			$this->load->library('itextmo_sms');
 			$send_to = $this->input->post('sms_to');
 			$message = $this->input->post('sms_message');
-			$api_code = "TR-MICHA699339_3R52S";
+			$api_code = "TR-UZUMA531102_WB7SU";
 
 			$result = $this->itextmo_sms->send_sms($send_to, $message, $api_code);
 
@@ -151,8 +151,8 @@ class Applicants extends MX_Controller {
 				$data['body'] = ($this->input->post('accepted') === "yes") ? 'You accepted the applicant for this job.' : 'You rejected an applicant for this job.';
 
 				$this->templates->header_with_sidebar($data);
-	            $this->load->view('accept_reject_applicants');
-	            $this->templates->footer_with_sidebar();
+			    	$this->load->view('accept_reject_applicants');
+			    	$this->templates->footer_with_sidebar();
 			}
 			else{	
 				echo "Error Num ". $result . " was encountered!";
